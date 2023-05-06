@@ -9,32 +9,34 @@
 </head>
 <body>
 
-	<section class="container">
-		<section>
-			<form>
-				<label>
-					<span>Hue Rotate</span>
-					<input id="hue" type="range" min="0" max="360" value="0" />
-				</label>
+	<main class="container">
+    <section class="control-container">
+      <form class="form-container">
+        <label for="hue">
+          <span>Hue Rotate</span>
+          <input id="hue" type="range" min="0" max="360" value="0" aria-labelledby="hue" aria-label="Hue Range Input"/>
+        </label>
 
-				<label>
-					<span>Blur</span>
-					<input id="blur" type="range" min="0" max="40" value="0" />
-				</label>
+        <label for="blur">
+          <span>Blur</span>
+          <input id="blur" type="range" min="0" max="40" value="0" aria-labelledby="blur" aria-label="Blur Range Input"/>
+        </label>
 
-				<label>
-					<span>Contrast</span>
-					<input id="contrast" type="range" min="0" max="400" value="50" />
-				</label>
+        <label for="contrast">
+          <span>Contrast</span>
+          <input id="contrast" type="range" min="0" max="400" value="50" aria-labelledby="contrast" aria-label="Contrast Range Input"/>
+        </label>
 
-				<label>
-					<span>Saturation</span>
-					<input id="saturation" type="range" min="0" max="200" value="100" />
-				</label>
-			</form>
-			<img src="./dali.png" width="400" height="400"/>
-		</section>
-	</section>
+        <label for="saturation">
+          <span>Saturation</span>
+          <input id="saturation" type="range" min="0" max="200" value="100" aria-labelledby="saturation" aria-label="Saturation Range Input"/>
+        </label>
+      </form>
+    </section>
+    <figure>
+      <img src="./dali.png" width="400" height="400" alt="four panel portrait of dali"/>
+    </figure>
+	</main>
 
 
 	<script>

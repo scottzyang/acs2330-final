@@ -1,0 +1,87 @@
+body {
+  height: 100vh;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  border: 3px solid black;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  justify-content: space-around;
+  /* border: 3px solid black; */
+}
+
+span {
+  margin-bottom: 5px;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+  width: 400px;
+  height: 400px;
+}
+
+img {
+  border-left: 2px solid black;
+}
+
+main {
+  margin: auto;
+  width: 800px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    border: 3px solid black;
+    width: 400px;
+    height: 800px;
+  }
+
+  img {
+    border-left: none;
+    border-bottom: 2px solid black;
+  }
+
+  label {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  input[type="range"] {
+    width: 75%;
+  }
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    border: none;
+  }
+
+  label {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="range"] {
+    width: 80%;
+  }
+}
